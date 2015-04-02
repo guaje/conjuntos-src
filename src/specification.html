@@ -1,0 +1,91 @@
+<section>
+	<section data-markdown>
+		## Especificación
+	</section>
+
+	<section data-markdown>
+		## Especificación: Introducción
+
+		Gracias a las definiciones anteriores, un conjunto se puede especificar de dos maneras: por _extensión_ y por _comprensión_.
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+		## Especificación: Extensión
+
+		Un conjunto se especifica por __extensión__ cuando:
+
+		- <!-- .element: class="fragment" -->
+		Se listan exhaustivamente los elementos que conforman el conjunto.
+		- <!-- .element: class="fragment" -->
+		Se puede determinar una secuencia que sirve para saber cual es el siguiente elemento del conjunto.
+		</script>
+	</section>
+
+	<section>
+		<h2>Especificación: Extensión</h2>
+
+		<p>
+			La notación general de un conjunto especificado por extensión es:
+			$$A = \{x_1, x_2, \dots ,x_n\}$$
+			donde \(x_i\) son los objetos en el conjunto \(A\).
+		</p>
+
+		<p class="fragment">
+			De esta manera el predicado asociado al conjunto es:
+			$$\phi_A(x) = \begin{cases} V, & \text{si $x = x_i$ para algún $i = 1, 2, \dots, n$;} \\ F, & \text{en otro caso.} \end{cases}$$
+		</p>
+	</section>
+
+	<section>
+		<h2>Extensión: Ejemplos</h2>
+
+		<ul>
+			<li>\(A = \{1, 2, 3, 4\}\)</li>
+			<li class="fragment">\(B = \{\color{blue}{\heartsuit}, \color{blue}{\diamondsuit}, \color{black}{\clubsuit}, \color{black}{\spadesuit}\}\)</li>
+			<li class="fragment">\(V = \{'a', 'e', 'i', 'o', 'u'\}\)</li>
+			<li class="fragment">\(\mathbb{B} = \{V, F\}\)</li>
+			<li class="fragment">\(\mathbb{N} = \{0, 1, 2, 3, 4, 5, \dots\}\)</li>
+			<li class="fragment">\(\mathbb{P} = \{1, 2, 3, 5, \dots\}\)</li>
+			<li class="fragment">\(\mathbb{Z} = \{\dots, -3, -2, -1, 0, 1, 2, 3, \dots\}\)</li>
+		</ul>
+	</section>
+
+	<section data-markdown>
+		<script type="text/template">
+		## Especificación: Comprensión
+
+		Un conjunto se especifica por __comprensión__ cuando:
+
+		- <!-- .element: class="fragment" -->
+		Se presenta explícitamente el predicado que define el conjunto.
+		</script>
+	</section>
+
+	<section>
+		<h2>Especificación: Comprensión</h2>
+
+		<p>
+			La notación general de un conjunto especificado por comprensión es:
+			$$A = 􏰂\{x : \phi_A(x)􏰃\}$$
+		</p>
+
+		<p class="fragment">
+			En esta notación, el símbolo “:” se lee “<i>tal que</i>”.
+		</p>
+	</section>
+
+	<section>
+		<h2>Compresión: Ejemplos</h2>
+
+		<ul>
+			<li>\(2\mathbb{N} = \{x : (x = 2n) \land (n \in \mathbb{N})\}\)</li>
+			<li class="fragment">\(\mathbb{Q} = \{x : (x = p / q) \land (p, q \in \mathbb{Z}) \land (q \neq 0)\}\)</li>
+			<li class="fragment">\(\mathbb{I} = \{x : x~\text{es un número irracional}\}\)</li>
+			<li class="fragment">\(\mathbb{R}^+ = \{x : (x \in \mathbb{R}) \land (x \gt 0)\}\)</li>
+			<li class="fragment">\(A = \{x : (x \in \mathbb{R}) \land (x^2 \le 1)\}\)</li>
+			<li class="fragment">\(B = \{x : x~\text{es una pinta del poker}\}\)</li>
+			<li class="fragment">\(V = \{x : x~\text{es una vocal}\}\)</li>
+		</ul>
+	</section>
+</section>

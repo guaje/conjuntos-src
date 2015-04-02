@@ -1,0 +1,63 @@
+<section>
+	<section data-markdown>
+		## Contenencia
+	</section>
+
+	<section>
+		<h2>Contenencia: Definición</h2>
+
+		<p>
+			<b>Contenencia</b>: Es el predicado que evalua si los elementos de un conjunto están <b>contenidos</b> en otro conjunto.
+			Dados los conjuntos \(A\) y \(B\), la contenencia entre conjuntos se define de la siguiente manera:
+			<br>
+			$$contenido(A, B) \Leftrightarrow (x \in A \rightarrow x \in B)$$
+		</p>
+	</section>
+
+	<section>
+		<h2>Contenencia: Consideraciones</h2>
+
+		<ul>
+			<li>
+				<p>
+					Cuando un conjunto <i>A está contenido en un conjunto B</i>, se dice que \(A\) es <b>subconjunto</b> de \(B\)
+				</p>
+
+				<p class="fragment">
+					y que \(B\) es un <b>superconjunto</b> de \(A\).
+				</p>
+			</li>
+			<li>
+				<p class="fragment">
+					\(A \subseteq B\) es usado para notar el predicado \(contenido(A, B)\)
+				</p>
+
+				<p class="fragment">
+					y \(A \nsubseteq B\) es usado para denotar \(\lnot contenido(A, B)\).
+				</p>
+			</li>
+			<li>
+				<p class="fragment">
+					Para todo conjunto \(A\) se cumple que \(\emptyset \subseteq A\)
+				</p>
+
+				<p class="fragment">
+					y que \(A \subseteq A\).
+				</p>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Contenencia: Ejemplo</h2>
+
+		<p>
+			Sean \(A\), \(B\) y \(C\) los siguientes conjuntos: \(A = \{'H', 'o', 'l', 'a'\}\), \(B = \{'m', 'u', 'n', 'd', 'o'\}\) y \(C = \{'H', 'o', 'l', 'a', '!'\}\), entonces:
+		</p>
+
+		<ul>
+			<li class="fragment">\(A \subseteq C\)</li>
+			<li class="fragment">\(B \nsubseteq C\)</li>
+		</ul>
+	</section>
+</section>

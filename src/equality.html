@@ -1,0 +1,75 @@
+<section>
+	<section data-markdown>
+		## Igualdad
+	</section>
+
+	<section>
+		<h2>Igualdad: Definición</h2>
+
+		<p>
+			<b>Igualdad</b>: Es el predicado que evalua si los elementos de un conjunto son los <b>mismos</b> que los de otro conjunto.
+			Dados los conjuntos \(A\) y \(B\), la igualdad entre conjuntos se define de la siguiente manera:
+			<br>						
+			$$igual(A, B) \Leftrightarrow ((A \subseteq B) \land (B \subseteq A))$$
+		</p>
+	</section>
+
+	<section>
+		<h2>Igualdad: Consideraciones</h2>
+
+		<ul>
+			<li>
+				<p>
+					\(A = B\) es usado para notar el predicado \(igual(A, B)\)
+				</p>
+
+				<p class="fragment">
+					y \(A \neq B\) es usado para denotar \(\lnot(igual(A, B))\).
+				</p>
+			</li>
+			<li class="fragment"> \((A = B) \Leftrightarrow (\phi_A \Leftrightarrow \phi_B)\).</li>
+			<li>
+				<p class="fragment">
+					\(A \subsetneq B\) es usado para denotar que \(((A \subseteq B) \land (A \neq B))\)
+				</p>
+
+				<p class="fragment">
+					es decir, que <i>A está contenido estrictamente en B</i>.
+				</p>
+
+				<p class="fragment">
+					En esos casos se dice que \(A\) es un <b>subconjunto propio</b> de \(B\).
+				</p>
+			</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Igualdad: Ejemplo</h2>
+
+		<p>
+			Sean \(A\), \(B\) y \(C\) los siguientes conjuntos: \(A = \{2, 4, 6, 8, 0\}\), \(B = \{0, 2, 4, 6, 8\}\) y \(C = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\), entonces:
+		</p>
+
+		<ul>
+			<li>\(A \subseteq B\)</li>
+			<li>\(B \subseteq A\)</li>
+			<li class="fragment">por lo tanto, \(A = B\)</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Igualdad: Ejemplo</h2>
+
+		<p>
+			Sean \(A\), \(B\) y \(C\) los siguientes conjuntos: \(A = \{2, 4, 6, 8, 0\}\), \(B = \{0, 2, 4, 6, 8\}\) y \(C = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}\), entonces:
+		</p>
+
+		<ul>
+			<li>\(A \subseteq C\)</li>
+			<li>\(C \nsubseteq A\)</li>
+			<li class="fragment">es decir, \(A \neq C\)</li>
+			<li class="fragment">de donde \(A \subsetneq C\) (\(A\) es un <b>subconjunto propio</b> de \(C\))</li>
+		</ul>
+	</section>
+</section>
